@@ -1,9 +1,113 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: black;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('imagem-de-fundo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
 }
 
+.undertale-header {
+    font-size: 2rem;
+    color: #FF5733;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    background-color: #333;
+    border: 3px solid #FF5733;
+    padding: 10px;
+}
+
+.undertale-logo {
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    font-size: 20px;
+    color: #FF5733;
+    background-color: #000;
+    border: 2px solid #FF5733;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin: 5px;
+}
+
+.menu-item:hover {
+    background-color: #FF5733;
+    color: black;
+    transform: scale(1.1);
+}
+
+.title {
+    font-size: 3rem;
+    color: #FF5733;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.start-button {
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #FF5733;
+    background-color: #000;
+    border: 2px solid #FF5733;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.start-button:hover {
+    background-color: #FF5733;
+    color: black;
+    transform: scale(1.1);
+}
+
+.description {
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 1024px) {
+    .undertale-header {
+    margin-top: -50px;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .menu-item {
+    font-size: 22px; 
+  }
+
+  .title {
+    font-size: 4rem;
+    margin-bottom: 30px;
+  }
+
+  .start-button {
+    font-size: 1.8rem; 
+    padding: 25px;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  .undertale-logo {
+    max-width: 250px;
+  }
+}
