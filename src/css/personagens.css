@@ -1,3 +1,33 @@
+.undertale-header {
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.undertale-logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-item {
+    font-size: 0.8rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #f97504;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+}
+
 body {
     font-family: 'Press Start 2P', cursive;
     background-color: #000000;
@@ -75,5 +105,30 @@ p {
 
     p {
         font-size: 0.9rem;  
+    }
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    .start-button {
+        font-size: 1.5rem;
+        padding: 20px 30px;
+    }
+
+    .undertale-logo {
+        max-width: 200px;
+    }
+
+    .menu-item {
+        font-size: 0.9rem;
     }
 }

@@ -8,79 +8,54 @@ body {
     padding: 0;
 }
 
-/* header config*/
-body {
-    padding-top: 100px; 
-}
-
-
-.navbar {
-    font-size: 1rem;
-    background-color: transparent !important; 
-}
-
-.navbar-brand span {
-    color: white;
-    font-family: 'Press Start 2P', cursive;
+.undertale-header {
+    padding: 20px 10px;
+    text-align: center;
 }
 
 .undertale-logo {
     max-width: 150px;
+    width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
 
-.navbar-nav {
-    gap: 30px; 
-    display: flex; 
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.navbar-nav .nav-link {
-    color: white;
-    font-family: 'Press Start 2P', cursive;
+.menu-item {
     font-size: 0.8rem;
-    transition: color 0.2s, transform 0.2s;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #f97504;
-    transform: scale(1.1);
-}
-
-.navbar-nav .nav-link.active {
-    color: #f97504;
-}
-
-
-.navbar-nav .nav-link.active {
-    color: #f97504;
 }
 
 .title {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #f97504;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
-/* header config*/
 
 .description {
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
-    margin-top: 20px;
-    max-width: 600px;
+    margin-top: 15px;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .start-button {
-    font-size: 1.5rem;
-    padding: 20px;
+    font-size: 1.2rem;
+    padding: 15px 25px;
     color: #f97504;
     background-color: #000;
     border: 2px solid #f97504;
     text-decoration: none;
     transition: background-color 0.3s, transform 0.3s;
-    margin-top: 30px;
+    margin-top: 20px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
@@ -88,6 +63,31 @@ body {
     background-color: #f97504;
     color: black;
     transform: scale(1.1);
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        font-size: 1.2rem;
+        margin-top: 20px;
+    }
+
+    .start-button {
+        font-size: 1.5rem;
+        padding: 20px 30px;
+    }
+
+    .undertale-logo {
+        max-width: 200px;
+    }
+
+    .menu-item {
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -103,10 +103,6 @@ body {
 
     .start-button {
         font-size: 1.8rem;
-        padding: 25px;
-    }
-
-    .undertale-logo {
-        max-width: 200px;
+        padding: 25px 35px;
     }
 }

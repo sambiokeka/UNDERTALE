@@ -1,57 +1,83 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: black;
-}
-
-
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo */
 body {
     background-color: black;
-    font-family: 'Press Start 2P', cursive;
     color: orange;
-    text-align: center;
+    font-family: 'Press Start 2P', cursive;
     font-size: 12px;
+    text-align: center;
     overflow-x: hidden;
 }
 
+.undertale-header {
+    padding: 20px 10px;
+    text-align: center;
+}
 
+.undertale-logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-item {
+    font-size: 0.8rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #f97504;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 15px;
+}
+/* CONTAINER DE CENAS */
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
 }
 
+/* CENA */
 .scene {
-    margin-bottom: 20px;
+    width: 50%;
+    height: 300px; 
+    margin-bottom: 25px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .scene img {
     width: 100%;
-    height: auto;
-    max-width: 600px;
+    height: 100%;
+    object-fit: cover; /* mantém proporção, corta se necessário */
     border: 2px solid white;
+    border-radius: 8px;
 }
 
 .scene p {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.4;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;  
-    height: 200px;  
-    object-fit: cover; 
-    border-radius: 8px; 
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
 }
