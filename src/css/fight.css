@@ -1,0 +1,125 @@
+
+body {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+body {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 14px;
+}
+
+
+.battle-box {
+  width: 700px;
+  height: 500px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: black;
+}
+
+.battle-area {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: black;
+  background-image: linear-gradient(to right, green 1px, transparent 1px),
+                    linear-gradient(to bottom, green 1px, transparent 1px);
+  background-size: 100px 100px;
+}
+
+.inimigo {
+  position: absolute;
+  width: 120px;
+  height: auto;
+}
+
+.dialogoCaixa {
+  flex: 1;
+  border-top: 2px solid white;
+  padding: 15px;
+  font-size: 18px;
+}
+
+
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid white;
+  padding: 10px 0;
+}
+.menu button {
+  background: black;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 20px;
+  font-family: 'Press Start 2P', monospace;
+}
+.menu button:hover {
+  color: yellow;
+}
+.fight { color: red; }
+.act   { color: orange; }
+.item  { color: orange; }
+.mercy { color: orange; }
+
+
+.attack-bar-container {
+  display: none;
+  position: absolute;
+  bottom: -40%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 400px;
+  height: 60px;
+  border: 2px solid white;
+  background: black;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.zone {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+.zone.yellow {
+  background: yellow;
+  width: 30%;
+  left: 0;
+}
+.zone.yellow.right {
+  right: 0;
+  left: auto;
+}
+.zone.red {
+  background: red;
+  width: 15%;
+  left: 0;
+}
+.zone.red.right {
+  right: 0;
+  left: auto;
+}
+
+.attack-line {
+  position: absolute;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: lime;
+  left: 0;
+}
