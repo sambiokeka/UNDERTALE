@@ -5,72 +5,64 @@ body {
     background-image: url('imagem-de-fundo.jpg');
     background-size: cover;
     background-position: center;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
 }
-<<<<<<< HEAD:src/assets/images/css/style.css
 
-.undertale-header {
-    font-size: 2rem;
-    color: #FF5733;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    background-color: #333;
-    border: 3px solid #FF5733;
-    padding: 10px;
+/* header config*/
+body {
+    padding-top: 100px; 
+}
+
+
+.navbar {
+    font-size: 1rem;
+    background-color: transparent !important; 
+}
+
+.navbar-brand span {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .undertale-logo {
-    max-width: 180px;
+    max-width: 150px;
     height: auto;
-    margin-bottom: 20px;
 }
 
-.menu-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.navbar-nav {
+    gap: 30px; 
+    display: flex; 
 }
 
-.menu-item {
-    font-size: 20px;
-    color: #FF5733;
-    background-color: #000;
-    border: 2px solid #FF5733;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-    margin: 5px;
+.navbar-nav .nav-link {
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    transition: color 0.2s, transform 0.2s;
 }
 
-.menu-item:hover {
-    background-color: #FF5733;
-    color: black;
+.navbar-nav .nav-link:hover {
+    color: #f97504;
     transform: scale(1.1);
+}
+
+.navbar-nav .nav-link.active {
+    color: #f97504;
+}
+
+
+.navbar-nav .nav-link.active {
+    color: #f97504;
 }
 
 .title {
     font-size: 3rem;
-    color: #FF5733;
+    color: #f97504;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
 }
-
-.start-button {
-    font-size: 1.5rem;
-    padding: 20px;
-    color: #FF5733;
-    background-color: #000;
-    border: 2px solid #FF5733;
-    text-decoration: none;
-    transition: background-color 0.3s, transform 0.3s;
-    margin-top: 30px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-}
-
-.start-button:hover {
-    background-color: #FF5733;
-    color: black;
-    transform: scale(1.1);
-}
+/* header config*/
 
 .description {
     font-size: 1.2rem;
@@ -81,36 +73,41 @@ body {
     margin-right: auto;
 }
 
+.start-button {
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #f97504;
+    background-color: #000;
+    border: 2px solid #f97504;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.start-button:hover {
+    background-color: #f97504;
+    color: black;
+    transform: scale(1.1);
+}
 
 @media (min-width: 1024px) {
-    .undertale-header {
-    margin-top: -50px;
-    padding: 20px;
-    justify-content: center;
-  }
+    .title {
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
 
-  .menu-item {
-    font-size: 22px; 
-  }
+    .description {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
 
-  .title {
-    font-size: 4rem;
-    margin-bottom: 30px;
-  }
+    .start-button {
+        font-size: 1.8rem;
+        padding: 25px;
+    }
 
-  .start-button {
-    font-size: 1.8rem; 
-    padding: 25px;
-  }
-
-  .description {
-    font-size: 1.5rem;
-    margin-top: 30px;
-  }
-
-  .undertale-logo {
-    max-width: 250px;
-  }
+    .undertale-logo {
+        max-width: 200px;
+    }
 }
-=======
->>>>>>> ef7191e13f2aec5a4af330d32d4304022b49f6c5:src/css/style.css
